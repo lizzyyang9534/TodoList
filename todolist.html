@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.7/semantic.min.js"></script>
+	<script src="todolist.js"></script>
+</head>
+
+<body>
+	<div class="ui container">
+		<h1 id="title" class="ui teal center aligned header">To Do List</h1>
+		<button id="button_new" class="fluid ui big teal button" onclick="addTask()">New Task</button>
+		<div id="todolist" class="ui cards">
+			<!-- <div class="card">
+				<div class="content">
+					<div class="header">
+						寫功課
+					</div>
+					<div class="description">
+						寫一個To Do List
+					</div>
+				</div>
+				<div class="extra content">
+					<div class="ui two buttons">
+						<div class="ui teal button" onclick="doneTask(event)">Done</div>
+						<div class="ui basic red button" onclick="removeTask(event)">Remove</div>
+					</div>
+				</div>
+				<div class="ui dimmer">
+					<div class="content">
+						<div class="center">
+							<h2 class="ui inverted header" onclick="removeTask(event)">Done!</h2>
+							<div class="ui red button" onclick="removeDoneTask(event)">Remove</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+		<div class="ui modal">
+			<i class="close icon"></i>
+			<div class="header">
+				Remove Task
+			</div>
+			<div class="image content">
+				<div class="description">
+					<p>Sure to remove this task?</p>
+				</div>
+			</div>
+			<div class="actions">
+				<div class="ui black deny button">
+					No
+				</div>
+				<div class="ui positive right labeled icon button">
+					Yes
+					<i class="checkmark icon"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

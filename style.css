@@ -1,0 +1,27 @@
+body{
+	background-color: #EFEFEF;
+}
+#title{
+	padding-top: 50px;
+	font-size: 60px;
+}
+.ui .cards{
+	margin-top: 0;
+	padding-top: 20px;
+}
+.card .description{
+	word-wrap: break-word;
+	 word-break: normal;
+}
+.dimmer_content{
+	display: -webkit-flex;
+	display: flex;
+    height: 100%;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+}
+.dimmer_content:hover{
+	cursor: pointer;
+}
